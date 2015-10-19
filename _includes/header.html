@@ -10,14 +10,18 @@
     <div class="mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
         <div class="mdl-layout__header-row">
-          <button id="menu" class="mdl-button mdl-js-button mdl-button--icon">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="menu">
-            <li class="mdl-menu__item"><a href="regex">Regex</a></li>
-          </ul>
           <span class="mdl-layout-title">{{ site.name }}</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="regex">Regex</a>
+          </nav>
         </div>
       </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">{{ site.name }}</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="regex">Regex</a>
+        </nav>
+      </div>
       <main class="mdl-layout__content">
         <div class="mdl-grid">
