@@ -7,7 +7,17 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <header>
-      <h1>{{ site.name }}</h1>
-      <nav><a href="regex">Regex</a></nav>
-    </header>
+    <div class="mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <button id="menu" class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">more_vert</i>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="menu">
+          <li class="mdl-menu__item"><a href="regex">Regex</a></li>
+        </ul>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">{{ site.name }}</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
